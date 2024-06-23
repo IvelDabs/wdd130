@@ -1,7 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Font+Name&display=swap");
 
+:root {
+  --primary-color: #396e94;
+  --secondary-color: #e7c24f;
+  --accent1-color: #a43312;
+  --accent2-color: #381d2a;
+  --heading-font: "Font Name", sans-serif;
+  --paragraph-font: "Font Name", sans-serif;
+  --nav-background-color: #396e94;
+  --nav-link-color: #ffffff;
+  --nav-hover-link-color: #e7c24f;
+  --nav-hover-background-color: #381d2a;
+}
+
 body {
-  font-family: "Font Name", sans-serif;
+  font-family: var(--paragraph-font);
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
@@ -9,7 +22,7 @@ body {
 
 header {
   padding: 20px;
-  background-color: #396e94;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -18,13 +31,13 @@ header h1 {
 }
 
 nav {
-  background-color: #396e94;
+  background-color: var(--nav-background-color);
   padding: 10px;
   border-radius: 5px;
 }
 
 nav a {
-  color: white;
+  color: var(--nav-link-color);
   text-decoration: none;
   margin-right: 10px;
   padding: 8px 15px;
@@ -33,12 +46,12 @@ nav a {
 
 nav a:link,
 nav a:visited {
-  color: white;
+  color: var(--nav-link-color);
 }
 
 nav a:hover {
-  color: #e7c24f;
-  background-color: #381d2a;
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
 
 footer {
@@ -52,5 +65,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Font Name", sans-serif;
+  font-family: var(--heading-font);
 }
