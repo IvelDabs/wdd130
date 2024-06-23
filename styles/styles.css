@@ -8,6 +8,16 @@ aside {
   text-align: center;
 }
 
+nav {
+  background-color: rgb(6, 6, 56);
+  color: white;
+  height: 12vh;
+  padding: 5px;
+}
+
+nav a {
+  color: white;
+}
 aside img {
   width: 200px;
   height: auto;
