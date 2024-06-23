@@ -54,6 +54,15 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+
 footer {
   text-align: center;
   padding: 20px;
