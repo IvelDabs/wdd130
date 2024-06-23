@@ -40,13 +40,18 @@ nav a {
   color: var(--nav-link-color);
   text-decoration: none;
   margin-right: 10px;
+  padding: 8px 15px;
+  border-radius: 3px;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--nav-link-color);
 }
 
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
-  padding: 5px 10px;
-  border-radius: 3px;
 }
 
 footer {
