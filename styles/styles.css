@@ -1,26 +1,45 @@
-aside {
-  width: 20rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Class Selectors */
+.box {
   margin: 1rem;
   padding: 1rem;
   border: 10px solid gainsboro;
   background-color: rgb(6, 6, 56);
   color: white;
+}
+
+aside {
+  position: relative;
+  width: 20rem;
   text-align: center;
+}
+
+aside h2 {
+  position: absolute;
+  top: 10px;
+  left: 120px;
+  padding: 5px;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
 }
 
 nav {
   background-color: rgb(6, 6, 56);
   color: white;
-  height: 12vh;
-  padding: 5px;
+  padding: 20px;
 }
 
-nav a {
+nav a,
+ul a {
   color: white;
-}
-aside img {
-  width: 200px;
-  height: auto;
 }
 
 main {
@@ -28,6 +47,7 @@ main {
 }
 
 main img {
+  float: right;
   width: 300px;
   height: auto;
 }
