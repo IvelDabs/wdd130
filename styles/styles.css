@@ -11,7 +11,6 @@
   border: 10px solid gray;
   background-color: gainsboro;
   color: black;
-  width: ;
 }
 
 aside h2 {
@@ -88,7 +87,8 @@ footer {
 
 h1 {
   color: steelblue;
-  border-bottom: 5px;
+  border-bottom: 2px solid steelblue;
+  margin-bottom: 10px;
 }
 
 header,
