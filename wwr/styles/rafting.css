@@ -240,7 +240,7 @@ figure img{
 }
 
 iframe{
-  width: "600";
-  height: "450";
+  width: 600px;
+  height: 250px;
   border: 0;
 }
