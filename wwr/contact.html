@@ -32,8 +32,10 @@
           <p>Address: 123 Adventure Lane, Rapids City, RC 12345</p>
           <p>Phone: (123) 456-7890</p>
           <p>Email: info@rapidadventureexpedition.com</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373631531806!3d-37.81627927975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727d59d63f2b7a!2s123+Adventure+Lane%2C+Rapids+City%2C+RC+12345!5e0!3m2!1sen!2sus!4v1599472473654!5m2!1sen!2sus"
-            allowfullscreen=""></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373631531806!3d-37.81627927975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727d59d63f2b7a!2s123+Adventure+Lane%2C+Rapids+City%2C+RC+12345!5e0!3m2!1sen!2sus!4v1599472473654!5m2!1sen!2sus"
+            allowfullscreen=""
+          ></iframe>
         </div>
       </section>
       <section>
@@ -56,39 +58,64 @@
       <section>
         <h2>Get in Touch</h2>
         <form action="submit_contact" method="post">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label>Purpose of Message:</label>
             <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+              <input
+                type="radio"
+                id="general"
+                name="purpose"
+                value="General Inquiry"
+                required
+              />
+              <label for="general">General Inquiry</label>
             </div>
             <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+              <input
+                type="radio"
+                id="reservation"
+                name="purpose"
+                value="Reservation Question"
+              />
+              <label for="reservation">Reservation Question</label>
             </div>
             <div>
-                <label>Purpose of Message:</label>
-                <div>
-                    <input type="radio" id="general" name="purpose" value="General Inquiry" required ><label for="general">General Inquiry</label>
-                    
-                <div>
-                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
-                    <label for="reservation">Reservation Question</label>
-                </div>
-                <div>
-                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
-                    <label for="suggestion">Website Suggestion</label>
-                </div>
+              <input
+                type="radio"
+                id="suggestion"
+                name="purpose"
+                value="Website Suggestion"
+              />
+              <label for="suggestion">Website Suggestion</label>
             </div>
-            <div>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
-            </div>
-            <div>
-                <input type="checkbox" id="newsletter" name="newsletter">
-                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-            </div>
-            <div>
-                <button type="submit">Submit</button>
-            </div>
+          </div>
+          <div>
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              required
+            ></textarea>
+          </div>
+          <div>
+            <input type="checkbox" id="newsletter" name="newsletter" />
+            <label for="newsletter"
+              >Please subscribe me to the monthly newsletter</label
+            >
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
         </form>
       </section>
     </main>
