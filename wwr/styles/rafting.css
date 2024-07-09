@@ -238,3 +238,9 @@ button[type="submit"]:hover {
 figure img{
   width: 200px;
 }
+
+iframe{
+  width: "600";
+  height: "450";
+  border: 0;
+}
